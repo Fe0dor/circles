@@ -1,0 +1,80 @@
+html {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.circle {
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    border: 1px solid gray;
+    position: absolute;
+}
+
+.play-field {
+    position: relative;
+    height: 60vh;
+    border: 2px solid gray;
+}
+
+.settings {
+    padding: 20px 0;
+}
+
+.settings form {
+    display: inline-block;
+}
+
+.settings p {
+    display: inline-block;
+}
+
+.pf-set {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity .3s;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.pf-set.hiding {
+    opacity: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.pf-set input, button {
+    background-color: lightcoral;
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid coral;
+}
+
+.pf-set input:hover {
+    background-color: coral;
+}
+
+.end-game {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 5px;
+}
